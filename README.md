@@ -1,5 +1,5 @@
-# JS_Challenge
-## 1.Converting as array of object to object?
+# Javascript Challenge
+## 1.Converting an array of object to object?
 ###### Input 
 ```
 const peopleArray = [
