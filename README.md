@@ -1,6 +1,7 @@
 # JS_Challenge
-1.Converting as array of object to object?
-Input ====>
+## 1.Converting as array of object to object?
+###### Input 
+```
 const peopleArray = [
   { id: 123, name: "dave", age: 23 },
   { id: 456, name: "chris", age: 23 },
@@ -8,8 +9,9 @@ const peopleArray = [
   { id: 101, name: "tom", age: 23 },
   { id: 102, name: "tim", age: 23 }
 ]
-
-Expected Output ===>
+```
+###### Expected Output
+```
 const peopleObject = {
   "123": { id: 123, name: "dave", age: 23 },
   "456": { id: 456, name: "chris", age: 23 },
@@ -17,8 +19,10 @@ const peopleObject = {
   "101": { id: 101, name: "tom", age: 23 },
   "102": { id: 102, name: "tim", age: 23 }
 }
+```
 
-Soln. 
+###### Soln 
+```
 const arrayToObject = (array) => {
 	array.reduce((object, item)=>
 		object[item.id] = item;
@@ -27,3 +31,4 @@ const arrayToObject = (array) => {
 }
 
 const peopleObject =  arrayToObject(peopleArray);
+```
